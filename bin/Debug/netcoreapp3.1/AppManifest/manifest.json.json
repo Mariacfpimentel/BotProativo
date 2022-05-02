@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.12/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.12",
+  "version": "1.0.0",
+  "id": "b9309e41-4e13-43f7-996d-e8ea8b9fd2f7",
+  "packageName": "com.teams.sample.teamsproactiveappinstallation",
+  "developer": {
+    "name": "CPIFE",
+    "websiteUrl": "https://www.microsoft.com",
+    "privacyUrl": "https://www.teams.com/privacy",
+    "termsOfUseUrl": "https://www.teams.com/termsofuser"
+  },
+  "name": {
+    "short": "BotLhama",
+    "full": "BotLhama Proativo"
+  },
+  "description": {
+    "short": "Samples of Proactive Messaging in Teams",
+    "full": "Samples for getting conversation coordinates and sending proactive messages in Microsoft Teams."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "b9309e41-4e13-43f7-996d-e8ea8b9fd2f7",
+      "needsChannelSelector": false,
+      "isNotificationOnly": false,
+      "scopes": [
+        "personal",
+        "team",
+        "groupchat"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "team",
+            "groupchat"
+          ],
+          "commands": [
+            {
+              "title": "Check and Install",
+              "description": "Display the Welcome Message"
+            },
+            {
+              "title": "Send message",
+              "description": "Sends message to all the users"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ]
+}
